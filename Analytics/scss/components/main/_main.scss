@@ -1,0 +1,13 @@
+@forward '../../globals';
+
+.main{
+    background-color: var(--light-color);
+    padding: 3em 1em 0 1em;
+
+    &__title{
+        font: {
+            size: 1.2em;
+            weight: 600;
+        }
+    }
+}

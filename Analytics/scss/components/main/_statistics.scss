@@ -1,0 +1,37 @@
+@forward '../../globals';
+@forward '../../util';
+
+.statistics{
+    margin-bottom: 2em;
+
+    &__title{
+        @extend %title;
+    }
+
+    &__item{
+        margin-bottom: 1em;
+    }
+
+    &__item-description{
+        @extend %title;
+        font-size: .95em;
+    }
+    &__percentage-block{
+        background-color: var(--light-gray-color);
+    }
+    &__percentage-visitors{
+        @extend %statistics-percentage;
+        background-color: var(--green-color);
+        width: 25%;
+    }
+    &__percentage-users{
+        @extend %statistics-percentage;
+        background-color: var(--orange-color);
+        width: 50%;
+    }
+    &__percentage-bounce{
+        @extend %statistics-percentage;
+        background-color: var(--red-color);
+        width: 75%;
+    }
+}

@@ -1,0 +1,57 @@
+@forward '../../globals';
+@forward '../../util';
+
+.countries{
+    margin-bottom: 2em;
+
+    &__title{
+        @extend %title;
+        text-align: left;
+    }
+    &__table{
+        border-collapse: collapse;
+        border: .06em solid #00000022;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+    &__even{
+        background-color: var(--white-color);
+        &:hover{
+            background-color: var(--hover-color);
+        }
+    }
+     &__odd{
+
+        &:hover{
+            background-color: var(--hover-color);
+        }
+    }
+    &__data{
+        padding: .5em 1em;
+
+        text: {
+            transform: capitalize;
+            // align: center;
+        }
+        // width: 100%;
+    }
+
+    &__button{
+        text: {
+            decoration: none;
+            transform: capitalize;
+        }
+        font: {
+            size: .9em;
+        }
+        padding: .8em;
+        background-color: var(--gray-color);
+        color: var(--white-color);
+
+        &:hover{
+        background-color: var(--hover-color);
+        color: var(--black-color);
+
+        }
+    }
+}

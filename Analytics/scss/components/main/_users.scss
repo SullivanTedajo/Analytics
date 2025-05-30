@@ -1,0 +1,38 @@
+@forward '../../globals';
+@forward '../../util';
+
+.users{
+    margin-bottom: 2em;
+
+    &__title{
+        @extend %title;
+        margin-bottom: .5em;
+    }
+
+    &__items-list{
+        background-color: var(--white-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    &__item{
+        background-color: var(--white-color);
+        padding: .8em;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        border-bottom: .08em solid #00000022;
+        &:last-of-type{
+            border: none;
+        }
+        
+    }
+
+    &__img{
+        border-radius: 50%;
+    }
+    &__name{
+        margin: 0;
+        font-size: 1.3em;
+    }
+}

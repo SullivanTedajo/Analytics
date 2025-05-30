@@ -1,0 +1,55 @@
+@forward '../../globals';
+@forward '../../util';
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--white-color);
+    margin-bottom: 2em;
+
+    &__item-1{
+        @extend %statistics;
+        background-color: var(--red-color);
+    }
+    &__item-2{
+        @extend %statistics;
+        background-color: var(--blue-color);
+    }
+    &__item-3{
+        @extend %statistics;
+        background-color: var(--green-color);
+    }
+    &__item-4{
+        @extend %statistics;
+        background-color: var(--orange-color);
+    }
+    &__item-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    &__icon{
+        font-size: 2.8em;
+    }
+    &__value{
+        font: {
+            size: 1.2em;
+        }
+    }
+    &__title{
+        font: {
+            size: 1.2em;
+        }
+        margin-bottom: 0;
+    }
+}
+
+// MOBILE FIRST 
+
+@media only screen and (max-width: 37.5em) {
+    .numbers{
+        display: block;
+    }
+}

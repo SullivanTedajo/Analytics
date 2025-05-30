@@ -1,0 +1,48 @@
+@forward '../../globals';
+@forward '../../util';
+
+.features{
+    margin-bottom: 2em;
+    margin-inline: -1em;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    padding: 1.8em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    
+    gap: 2em;
+
+    &__item{
+        margin-bottom: 2em;
+    }
+
+    &__title-1, &__title-3, &__title-2{
+        font: {
+            size: 1.1em;
+            weight: 400;
+        }
+        margin-bottom: 0;
+    }
+    &__separator-1{
+        @extend %separator;
+        background-color: var(--green-color);  
+    }
+    &__separator-2{
+        @extend %separator;
+        background-color: var(--red-color);  
+    }
+    &__separator-3{
+        @extend %separator;
+        background-color: var(--orange-color);  
+    }
+    
+}
+
+// MOBILE FIRST 
+
+@media only screen and (max-width: 37.5em) {
+    .features{
+        display: block;
+    }
+}

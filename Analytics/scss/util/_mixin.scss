@@ -1,0 +1,32 @@
+@forward '../globals';
+
+%statistics{
+    padding: 1em;
+    width: 100%;
+}
+%icon{
+    font: {
+            size: 1.2em;
+        }
+        padding-inline: .5em;
+}
+%title{
+    font: {
+            weight: 400;
+            size: 1.1em;
+        }
+        margin-bottom: .5em;
+}
+%statistics-percentage{
+    display: block;
+    padding: .5em;
+    color: var(--white-color);
+    text-align: center;
+    font-size: .85em;
+}
+%separator{
+    height: .4em;
+    border: none;
+    width: 100%;
+    margin-top: .1em;
+}

@@ -1,0 +1,51 @@
+@forward '../../globals';
+@forward '../../util';
+
+.comments{
+    margin-bottom: 2em;
+
+    &__title{
+        @extend %title;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 4em;
+        margin-bottom: 3em;
+    }
+    &__img{
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+    &__header{
+        margin-bottom: 1em;
+    }
+    &__name{
+        font: {
+            size: 1.2em;
+            weight: 400;
+        }
+        margin: 0;
+    }
+    &__meta{
+        font: {
+            size: .8em;
+            weight: 300;
+        }
+        opacity: .6;
+    }
+    &__description{
+        margin: 0;
+    }
+}
+
+
+// MOBILE FIRST 
+
+@media only screen and (max-width: 37.5em) {
+    .comments{
+        &__item{
+            display: block;
+        }
+    }
+}

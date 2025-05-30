@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Analytics | Dashboard Template</title>
+</head>
+<body>
+
+    <!-- *****  START HEADER SECTION  ***** -->
+    <header class="header">
+        <button class="header__button" aria-label="Ouvrir menu de navigaton" aria-haspopup="true" aria-expanded="false">
+            <i class="bi bi-list header__icon"></i>
+        </button>
+        <h1 class="header__brand">Logo</h1>
+    </header>
+    <!-- *****  END HEADER SECTION  ***** -->
+
+
+    <!-- *****  START MAIN CONTAINER  ***** -->
+    <div class="container" role="region" aria-label="Zone de contenu principal">
+
+
+        <!-- *****  START Aside ***** -->
+        <aside class="aside" id="aside" aria-labelledby="dashboard">
+            <div class="aside__header">
+                <img class="aside__featured-img" src="img/avatar-1.png"  alt="User avatar" width="46" height="46">
+                <div class="aside__profil">
+                    <p class="aside__description">Welcome, <strong class="aside__user-name">Sullivan</strong></p>
+                    <div class="aside__icons">
+                        <i class="bi bi-envelope-fill aside__icon"></i>
+                        <i class="bi bi-person-circle aside__icon"></i>
+                        <i class="bi bi-gear-fill aside__icon"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="aside__separator">
+            <div class="aside__body">
+                <h2 class="aside__title" id="dashboard">Dashboard</h2>
+                <nav class="aside__nav">
+                    <ul class="aside__items-list">
+                        <li class="aside__item">
+                            <i class="bi bi-people-fill aside__nav-icon" role="presentation"></i>
+                            Overview
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-eye-fill aside__nav-icon" role="presentation"></i>
+                            Views
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-people-fill aside__nav-icon" role="presentation"></i>
+                            Traffic
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-bullseye aside__nav-icon" role="presentation"></i>
+                            Geo
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-gem aside__nav-icon" role="presentation"></i>
+                            Orders
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-bell-fill aside__nav-icon" role="presentation"></i>
+                            News
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-buildings-fill aside__nav-icon" role="presentation"></i>
+                            General
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-arrow-counterclockwise aside__nav-icon" role="presentation"></i>
+                            History
+                        </li>
+                        <li class="aside__item">
+                            <i class="bi bi-gear-fill aside__nav-icon" role="presentation"></i>
+                            Settings
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- *****  END Aside ***** -->
+
+         <!-- *****  START Principal Content  ***** -->
+         <div class="principal" role="region" aria-labelledby="myDashboard">
+
+            <!-- *****  START MAIN  ***** -->
+
+
+         <main class="main">
+            <h2 class="main__title" id="myDashboard">
+                <i class="bi bi-speedometer2 main__icon" role="presentation"></i>
+                My Dashboard
+            </h2>
+
+            <!-- ****** START Numbers ****** -->
+            <section class="numbers" aria-label="Dashboard statistics">
+                <!-- Item 1  -->
+                <div class="numbers__item-1">
+                    <div class="numbers__item-container">
+                        <i class="bi bi-chat-dots-fill numbers__icon" role="presentation"></i>
+                        <span class="numbers__value">52</span>
+                    </div>
+                    <p class="numbers__title">Messages</p>
+                </div>
+                <!-- Item 2  -->
+                <div class="numbers__item-2">
+                    <div class="numbers__item-container">
+                        <i class="bi bi-eye-fill numbers__icon" role="presentation"></i>
+                        <span class="numbers__value">99</span>
+                    </div>
+                    <p class="numbers__title">Views</p>
+                </div>
+                <!-- Item 3  -->
+                <div class="numbers__item-3">
+                    <div class="numbers__item-container">
+                        <i class="bi bi-share-fill numbers__icon" role="presentation"></i>
+                        <span class="numbers__value">23</span>
+                    </div>
+                    <p class="numbers__title">Shares</p>
+                </div>
+                <!-- Item 4  -->
+                <div class="numbers__item-4">
+                    <div class="numbers__item-container">
+                        <i class="bi bi-people-fill numbers__icon" role="presentation"></i>
+                        <span class="numbers__value">50</span>
+                    </div>
+                    <p class="numbers__title">Users</p>
+                </div>
+            </section>
+            <!-- ****** END Numbers ****** -->
+
+            <!-- ****** START Regions ****** -->
+             <section class="regions" aria-labelledby="region-section">
+                <div class="regions__map">
+                    <h3 class="regions__title" id="region-section">Regions</h3>
+                    <img  class="regions__img" src="img/region.jpg" alt="Carte du monde" width="386" height="286">
+                </div>
+                <div class="feeds">
+                    <table class="regions__table">
+                        <caption class="regions__feeds-title">Feeds</caption>
+                        <tr class="regions__even">
+                            <td class="regions__data">
+                                <i class="bi bi-person-fill regions__icon-blue" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                New record, over 90 views.
+                            </td>
+                            <td class="regions__data" >
+                                10 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__odd">
+                            <td class="regions__data">
+                                <i class="bi bi-bell-fill regions__icon-red" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                Database Error.
+                            </td>
+                            <td class="regions__data" >
+                                15 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__even">
+                            <td class="regions__data">
+                                <i class="bi bi-people-fill regions__icon-yellow" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                New record, over 40 views.
+                            </td>
+                            <td class="regions__data" >
+                                17 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__odd">
+                            <td class="regions__data">
+                                <i class="bi bi-chat-fill regions__icon-red" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                New Comments.
+                            </td>
+                            <td class="regions__data" >
+                                25 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__even">
+                            <td class="regions__data">
+                                <i class="bi bi-bookmark-fill regions__icon-blue" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                Check transactions.
+                            </td>
+                            <td class="regions__data" >
+                                28 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__odd">
+                            <td class="regions__data">
+                                <i class="bi bi-laptop regions__icon-red" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                CPU overload.
+                            </td>
+                            <td class="regions__data" >
+                                35 mins
+                            </td>
+                        </tr>
+                        <tr class="regions__even">
+                            <td class="regions__data">
+                                <i class="bi bi-share-fill regions__icon-green" role="presentation"></i>
+                            </td>
+                            <td class="regions__data" colspan="4">
+                                New shares.
+                            </td>
+                            <td class="regions__data" >
+                                39 mins
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+             </section>
+            <!-- ****** END Regions ****** -->
+
+            <!-- ****** START Statistics ****** -->
+             <section class="statistics" aria-labelledby="General-stats">
+                <h3 class="statistics__title" id="General-stats">General stats</h3>
+                <!-- New Visitors  -->
+                <div class="statistics__item">
+                    <p class="statistics__item-description">New visitors</p>
+                    <div class="statistics__percentage-block">
+                        <span class="statistics__percentage-visitors">+25%</span>
+                    </div>
+                </div>
+                <!-- New Users  -->
+                <div class="statistics__item">
+                    <p class="statistics__item-description">New Users</p>
+                    <div class="statistics__percentage-block">
+                        <span class="statistics__percentage-users">+50%</span>
+                    </div>
+                </div>
+                <!-- Bounce Rate  -->
+                <div class="statistics__item">
+                    <p class="statistics__item-description">Bounce Rate</p>
+                    <div class="statistics__percentage-block">
+                        <span class="statistics__percentage-bounce">+75%</span>
+                    </div>
+                </div>
+             </section>
+            <!-- ****** END Statistics ****** -->
+
+            <!-- ****** START Countries ****** -->
+             <section class="countries" aria-labelledby="countries">
+                <table class="countries__table">
+                    <caption class="countries__title" id="Countries">Countries</caption>
+                    <tr class="countries__even">
+                        <td class="countries__data" colspan="4">United States</td>
+                        <td class="countries__data" >65%</td>
+                    </tr>
+                    <tr class="countries__odd">
+                        <td class="countries__data" colspan="4">UK</td>
+                        <td class="countries__data" >15.7%</td>
+                    </tr>
+                    <tr class="countries__even">
+                        <td class="countries__data" colspan="4">Russia</td>
+                        <td class="countries__data" >5.6%</td>
+                    </tr>
+                    <tr class="countries__odd">
+                        <td class="countries__data" colspan="4">Spain</td>
+                        <td class="countries__data" >2.1%</td>
+                    </tr>
+                    <tr class="countries__even">
+                        <td class="countries__data" colspan="4">India</td>
+                        <td class="countries__data" >1.9%</td>
+                    </tr>
+                    <tr class="countries__odd">
+                        <td class="countries__data" colspan="4">France</td>
+                        <td class="countries__data" >1.5%</td>
+                    </tr>
+                </table>
+                <a href="javascript:void(0)" class="countries__button">
+                    More Countries
+                    <i class="bi bi-arrow-right countries__button-icon" role="presentation"></i>
+                </a>
+             </section>
+            <!-- ****** END Countries ****** -->
+
+            <!-- ****** START Users ****** -->
+             <section class="users" aria-labelledby="users">
+                <h3 class="users__title" id="users">Recent Users</h3>
+                <div class="users__items-list">
+                    <!-- Item 1  -->
+                    <div class="users__item">
+                        <img class="users__img" src="img/avatar-1.png" alt="Mike Profil" width="46" height="46">
+                        <p class="users__name">Mike</p>
+                    </div>
+                    <!-- Item 2  -->
+                    <div class="users__item">
+                        <img class="users__img" src="img/avatar-2.png" alt="Jill Profil" width="46" height="46">
+                        <p class="users__name">Jill</p>
+                    </div>
+                    <!-- Item 3  -->
+                    <div class="users__item">
+                        <img class="users__img" src="img/avatar-3.png" alt="Mike Profil" width="46" height="46">
+                        <p class="users__name">Jane</p>
+                    </div>
+                </div>
+             </section>
+            <!-- ****** END Users ****** -->
+
+            <!-- ****** START Comments ****** -->
+             <section class="comments" aria-labelledby="comments">
+                <h3 class="comments__title" id="comments">Recents Comments</h3>
+                <!-- Item 1  -->
+                <div class="comments__item">
+                    <img src="img/avatar-4.png" alt="John Profile" class="comments__img" width="96" height="96">
+                    <div class="comments__card">
+                        <div class="comments__header">
+                            <p class="comments__name">
+                                John <span class="comments__meta">Sep 29, 2014, 9:12 PM</span>
+                            </p>
+                        </div>
+                        <div class="comments__body">
+                            <p class="comments__description">
+                                Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Item 2  -->
+                <div class="comments__item">
+                    <img src="img/avatar-5.png" alt="Bo Profile" class="comments__img" width="96" height="96">
+                    <div class="comments__card">
+                        <div class="comments__header">
+                            <p class="comments__name">
+                                John <span class="comments__meta">Sep 28, 2014, 10:15 PM</span>
+                            </p>
+                        </div>
+                        <div class="comments__body">
+                            <p class="comments__description">
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+             </section>
+            <!-- ****** END Comments ****** -->
+
+            <!-- ****** START Features ****** -->
+             <section class="features" aria-label="features">
+                <!-- Item 1 -->
+                <div class="features__item">
+                    <h4 class="features__title-1">Demographic</h4>
+                    <hr class="features__separator-1">
+                    <p class="features__description">Language</p>
+                    <p class="features__description">Country</p>
+                    <p class="features__description">City</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="features__item">
+                    <h4 class="features__title-2">System</h4>
+                    <hr class="features__separator-2">
+                    <p class="features__description">Browser</p>
+                    <p class="features__description">OS</p>
+                    <p class="features__description">More</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="features__item">
+                    <h4 class="features__title-3">Target</h4>
+                    <hr class="features__separator-3">
+                    <p class="features__description">Users</p>
+                    <p class="features__description">Acive</p>
+                    <p class="features__description">Geo</p>
+                    <p class="features__description">Interests</p>
+                </div>
+             </section>
+            <!-- ****** END Features ****** -->
+
+
+            <!-- ****** START FOOTER ****** -->
+             <footer class="footer">
+                <p class="footer__description">
+                    Powered by <a href="https://github.com/SullivanTedajo/" class="footer__link">Sullivan</a>
+                </p>
+             </footer>
+            <!-- ****** END FOOTER ****** -->
+
+
+
+
+
+
+
+
+
+         </main>
+
+
+        <!-- *****  END MAIN  ***** -->
+
+         </div>
+    <!-- *****  END Principal Content  ***** -->
+
+
+    </div>
+    <!-- *****  END MAIN CONTAINER  ***** -->
+
+
+
+
+    
+</body>
+</html>

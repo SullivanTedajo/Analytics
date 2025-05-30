@@ -1,0 +1,461 @@
+/* --- ******  PARAMETRAGE DES ELEMENTS GLOBAUX DU SITE  ****** --- */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  font-size: 10px;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+button, input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color:#000;
+  --light-color:#F1F1F1;
+  --hover-color: #CCCCCC;
+  --gray-color:#616161;
+  --light-gray-color: #9E9E9E;
+  --red-color:#F44336;
+  --blue-color:#2196F3;
+  --green-color:#009688;
+  --orange-color:#FF9800;
+}
+
+.header {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 0.3em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  padding: 0.3em;
+  visibility: hidden;
+}
+.header__icon {
+  font-size: 2em;
+  padding: 0.1em;
+}
+.header__brand {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@media only screen and (max-width: 57.5em) {
+  .header__button {
+    visibility: visible;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  position: relative;
+  margin: 0;
+}
+
+@media only screen and (max-width: 70em) {
+  .container {
+    display: block;
+  }
+}
+.aside {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: var(--white-color);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.aside__header {
+  padding: 1em 2em 1em 1em;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+.aside__featured-img {
+  border-radius: 50%;
+}
+.aside__description {
+  font-size: 0.9em;
+  text-align: center;
+  margin-left: -0.7em;
+  margin-bottom: 0.5em;
+}
+.aside__icons {
+  display: flex;
+  justify-content: space-between;
+}
+.aside__separator {
+  opacity: 0.3;
+}
+.aside__body {
+  padding-block: 1.5em;
+}
+.aside__title {
+  font-size: 1.1em;
+  font-weight: 200;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.aside__items-list {
+  list-style-type: none;
+  padding: 0;
+}
+.aside__item {
+  font-weight: 200;
+  padding: 0.5em 1em;
+}
+.aside__item:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+.aside__item:first-of-type {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+@media only screen and (max-width: 70em) {
+  .aside {
+    display: none;
+  }
+}
+.main {
+  background-color: var(--light-color);
+  padding: 3em 1em 0 1em;
+}
+.main__title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.numbers__item-1, .numbers__item-2, .numbers__item-3, .numbers__item-4 {
+  padding: 1em;
+  width: 100%;
+}
+
+.regions__icon-blue, .regions__icon-red, .regions__icon-yellow, .regions__icon-green {
+  font-size: 1.2em;
+  padding-inline: 0.5em;
+}
+
+.comments__title, .users__title, .countries__title, .statistics__title, .statistics__item-description, .regions__title {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.statistics__percentage-visitors, .statistics__percentage-users, .statistics__percentage-bounce {
+  display: block;
+  padding: 0.5em;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 0.85em;
+}
+
+.features__separator-1, .features__separator-2, .features__separator-3 {
+  height: 0.4em;
+  border: none;
+  width: 100%;
+  margin-top: 0.1em;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  color: var(--white-color);
+  margin-bottom: 2em;
+}
+.numbers__item-1 {
+  background-color: var(--red-color);
+}
+.numbers__item-2 {
+  background-color: var(--blue-color);
+}
+.numbers__item-3 {
+  background-color: var(--green-color);
+}
+.numbers__item-4 {
+  background-color: var(--orange-color);
+}
+.numbers__item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.numbers__icon {
+  font-size: 2.8em;
+}
+.numbers__value {
+  font-size: 1.2em;
+}
+.numbers__title {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .numbers {
+    display: block;
+  }
+}
+.regions {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.regions__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.regions__feeds-title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.regions__data {
+  padding: 0.4em 0;
+  border: none;
+  margin: 0;
+}
+.regions__data:last-child {
+  font-style: italic;
+  font-size: 0.9em;
+}
+.regions__even {
+  background-color: var(--white-color);
+}
+.regions__icon-blue {
+  color: var(--blue-color);
+}
+.regions__icon-red {
+  color: var(--red-color);
+}
+.regions__icon-yellow {
+  color: var(--yellow-color);
+}
+.regions__icon-green {
+  color: var(--green-color);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .regions {
+    display: block;
+  }
+  .regions__img {
+    width: 100%;
+  }
+}
+.statistics {
+  margin-bottom: 2em;
+}
+.statistics__item {
+  margin-bottom: 1em;
+}
+.statistics__item-description {
+  font-size: 0.95em;
+}
+.statistics__percentage-block {
+  background-color: var(--light-gray-color);
+}
+.statistics__percentage-visitors {
+  background-color: var(--green-color);
+  width: 25%;
+}
+.statistics__percentage-users {
+  background-color: var(--orange-color);
+  width: 50%;
+}
+.statistics__percentage-bounce {
+  background-color: var(--red-color);
+  width: 75%;
+}
+
+.countries {
+  margin-bottom: 2em;
+}
+.countries__title {
+  text-align: left;
+}
+.countries__table {
+  border-collapse: collapse;
+  border: 0.06em solid rgba(0, 0, 0, 0.1333333333);
+  margin-bottom: 2em;
+  width: 100%;
+}
+.countries__even {
+  background-color: var(--white-color);
+}
+.countries__even:hover {
+  background-color: var(--hover-color);
+}
+.countries__odd:hover {
+  background-color: var(--hover-color);
+}
+.countries__data {
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+}
+.countries__button {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  padding: 0.8em;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+.countries__button:hover {
+  background-color: var(--hover-color);
+  color: var(--black-color);
+}
+
+.users {
+  margin-bottom: 2em;
+}
+.users__title {
+  margin-bottom: 0.5em;
+}
+.users__items-list {
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.users__item {
+  background-color: var(--white-color);
+  padding: 0.8em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  border-bottom: 0.08em solid rgba(0, 0, 0, 0.1333333333);
+}
+.users__item:last-of-type {
+  border: none;
+}
+.users__img {
+  border-radius: 50%;
+}
+.users__name {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.comments {
+  margin-bottom: 2em;
+}
+.comments__item {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  margin-bottom: 3em;
+}
+.comments__img {
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.comments__header {
+  margin-bottom: 1em;
+}
+.comments__name {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0;
+}
+.comments__meta {
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.6;
+}
+.comments__description {
+  margin: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .comments__item {
+    display: block;
+  }
+}
+.features {
+  margin-bottom: 2em;
+  margin-inline: -1em;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  padding: 1.8em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 2em;
+}
+.features__item {
+  margin-bottom: 2em;
+}
+.features__title-1, .features__title-3, .features__title-2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.features__separator-1 {
+  background-color: var(--green-color);
+}
+.features__separator-2 {
+  background-color: var(--red-color);
+}
+.features__separator-3 {
+  background-color: var(--orange-color);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .features {
+    display: block;
+  }
+}
+.footer {
+  padding: 1em;
+}
+.footer__description {
+  margin: 0;
+}
+.footer__link {
+  color: var(--black-color);
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: var(--blue-color);
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
